@@ -1,45 +1,88 @@
-# Miscellaneous
+# ============================================
+# 📱 Flutter & Dart
+# ============================================
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub/
+.pub-cache/
+build/
+*.lock
+*.snapshot
+*.flutter-plugins
+*.g.dart
+
+# Flutter iOS/Android specific
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# Symbolication/Obfuscation
+app.*.map.json
+app.*.symbols
+
+# ============================================
+# 💻 IDEs & Editors
+# ============================================
+
+# VS Code
+.vscode/
+
+# IntelliJ & Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Xcode
+xcuserdata/
+*.xcworkspace
+*.xcuserstate
+*.xcsettings
+
+# NetBeans
+nbproject/private/
+
+# ============================================
+# 🛠️ Misc & OS Files
+# ============================================
+
 *.class
 *.log
 *.pyc
 *.swp
+*.tmp
+*.bak
+*.orig
+
+# macOS system files
 .DS_Store
-.atom/
+
+# Linux/Mac build & history
 .build/
 .buildlog/
 .history
-.svn/
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Atom Editor
+.atom/
+
+# Swift Package Manager
 .swiftpm/
+
+# SVN folders
+.svn/
+
+# Migration
 migrate_working_dir/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
+# ============================================
+# 📚 Documentation Exclusions
+# ============================================
 **/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
