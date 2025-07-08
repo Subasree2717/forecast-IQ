@@ -7,8 +7,9 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-# 🌍 OpenWeatherMap API
-API_KEY = "c21d57243acb8f03fdf8a17b41a19edb"
+import os
+API_KEY = os.getenv("WEATHER_API_KEY")
+
 
 @app.route("/today", methods=["GET"])
 def get_today_weather():
